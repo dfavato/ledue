@@ -13,7 +13,7 @@ def homepage(request):
             'telephone_number': '31995540401',
             'telephone_text': '(31) 9 9554 0401',
             'whatsapp_number': '553195540401',
-            'email': 'ledueceremicas@gmail.com',
+            'email': 'ledueceramicas@gmail.com',
             'instagram': 'https://www.instagram.com/ledueceramicas/'
         }
     }
