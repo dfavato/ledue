@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt/br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'components/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'semantic.min.css' %}?v=1.0">
+    <link rel="shortcut icon" href="{% static 'homepage/favicon.png' %}" />
+
+    {% block style %}{% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script src="{% static 'semantic.min.js' %}"></script>
+
+    {% block script %}{% endblock %}
+  </head>
+  <body>
+    {% block body %}
+    {% endblock%}
+  </body>
+</html>

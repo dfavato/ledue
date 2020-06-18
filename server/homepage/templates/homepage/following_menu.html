@@ -1,0 +1,18 @@
+{% load static %}
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+    <a href="." class="active item"><img src="{% static 'homepage/selo.png' %}"></a>
+    {% for href, name in secoes.items %}
+      <a href="#{{ href }}" class="item">{{ name }}</a>
+    {% endfor %}
+
+    <!-- <div class="right menu">
+      <div class="item">
+        <a class="ui button">Log in</a>
+      </div>
+      <div class="item">
+        <a class="ui primary button">Sign Up</a>
+      </div>
+    </div> -->
+  </div>
+</div>

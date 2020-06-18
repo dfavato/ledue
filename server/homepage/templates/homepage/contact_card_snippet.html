@@ -1,0 +1,30 @@
+{% load static %}
+<div class="ui very padded raised compact purple segment">
+  <div class="ui middle aligned divided stackable grid">
+    <div class="row">
+      <div class="six wide column">
+        <img src="{% static 'homepage/logo.png' %}" class="ui centered middle alligned small image">
+      </div>
+      <div class="ten wide column">
+        <div class="ui list">
+          <div class="item">
+            <a href="tel:{{ contacts.telephone_text }}">
+              <i class="phone icon"></i>
+            </a>
+            <a href="https://wa.me/{{ contacts.whatsapp_number }}?text=">
+              <i class="whatsapp icon"></i>
+            </a>
+            <span class="content">{{ contacts.telephone_text }}</span>
+          </div>
+
+          <div class="item">
+            <a target="_blank" href="mailto:{{ contacts.email }}">
+              <i class="envelope link icon"></i>
+              <span class="content">{{ contacts.email }}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+venv/
+*.sqlite3
+**__pycache__
+**secret_key.txt
+medias/
+client/node_modules
+client/semantic/src
+client/semantic/tasks
+client/semantic/gulpfile.js
+server/server/local_settings.py
