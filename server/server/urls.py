@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.urls import path
 
 from homepage.views import *
+from .views import downloads
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', homepage, name="homepage")
+    path('', homepage, name="homepage"),
+    path('downloads/<path:path>', downloads, name="downloads")
 ]

@@ -94,3 +94,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(PROJECT_DIR, 'client', 'semantic', 'dist')
 ]
+
+MEDIA_ROOT = os.path.join(
+    PROJECT_DIR, 'server', 'media'
+)

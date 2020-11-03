@@ -69,6 +69,10 @@ p {
   margin-top: 10vh;
 }
 
+.catalogo .button {
+  opacity: 0.8;
+}
+
 @media only screen and (max-height: 450px) {
   .masthead h1.ui.header {
     margin-top: 5vh !important;
